@@ -24,7 +24,7 @@ function Tweet(props) {
                 <h4 className = "content">{props.content}</h4>
                 <h6 className = "time">{props.time} ago</h6>
                 <div className = "likes">
-                    {liked? <button onClick={()=>setLiked(!liked)}>{like}</button> : <button onClick={()=>setLiked(!liked)}>{unlike}</button>}
+                    <button onClick={()=>setLiked(!liked)}>{liked? like : unlike}</button>
                     {liked? <h6>{props.likes + 1} likes</h6> : <h6>{props.likes} likes</h6>}
                 </div>
 
