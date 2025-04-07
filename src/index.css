@@ -28,3 +28,10 @@ button {
 button:focus {
   outline: none;
 }
+
+.likes {
+  display: flex;
+  align-items: center;
+
+
+}
